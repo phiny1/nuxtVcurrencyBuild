@@ -63,12 +63,9 @@
           >
             Nuxt GitHub
           </a>
-          <v-currency-field
-            v-bind="currency_config"
-            v-model="preferences"
-            hide-details
-          >
-          </v-currency-field>
+
+          <CardTest></CardTest>
+
         </v-card-text>
         <v-card-actions>
           <v-spacer />
@@ -88,26 +85,13 @@
 <script>
 import Logo from '~/components/Logo.vue'
 import VuetifyLogo from '~/components/VuetifyLogo.vue'
+import CardTest from '~/components/CardTest.vue'
 
 export default {
   components: {
     Logo,
-    VuetifyLogo
-  },
-  data() {
-    return {
-      currency_config: {
-        decimal: ',',
-        thousands: '.',
-        prefix: 'R$ ',
-        precision: 2,
-        masked: false,
-        allowBlank: false,
-        min: Number.MIN_SAFE_INTEGER,
-        max: Number.MAX_SAFE_INTEGER
-      },
-      preferences: 0
-    }
+    VuetifyLogo,
+    CardTest
   }
 }
 </script>
