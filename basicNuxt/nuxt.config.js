@@ -70,6 +70,7 @@ export default {
   ** https://github.com/nuxt-community/vuetify-module
   */
   vuetify: {
+    treeShake: false,
     customVariables: ['~/assets/variables.scss'],
     theme: {
       dark: true,
