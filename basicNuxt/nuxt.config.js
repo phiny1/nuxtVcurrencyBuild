@@ -52,6 +52,7 @@ export default {
   */
   plugins: [
     '~/plugins/social.js',
+    '~/plugins/Vuetify.js',
     { src: '~/plugins/vCurrencyField.js' }
   ],
   /*
@@ -70,7 +71,7 @@ export default {
   ** https://github.com/nuxt-community/vuetify-module
   */
   vuetify: {
-    treeShake: false,
+    treeShake: true,
     customVariables: ['~/assets/variables.scss'],
     theme: {
       dark: true,
