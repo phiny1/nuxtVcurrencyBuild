@@ -53,6 +53,7 @@ export default {
   plugins: [
     '~/plugins/social.js',
     '~/plugins/Vuetify.js',
+    '~/plugins/currency.js',
     { src: '~/plugins/vCurrencyField.js' }
   ],
   /*

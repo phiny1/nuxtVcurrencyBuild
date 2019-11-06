@@ -42,6 +42,7 @@
     "v-money": "^0.8.1",
     "vue-analytics": "5.17.2",
     "vue-analytics-facebook-pixel": "^1.0.1",
+    "vue-currency-input": "^1.11.3",
     "vue-markdown": "^2.2.4",
     "vue-slick": "^1.1.15",
     "vue-social-sharing": "^2.4.6",

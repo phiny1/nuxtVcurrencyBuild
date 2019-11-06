@@ -63,8 +63,8 @@
           >
             Nuxt GitHub
           </a>
-
-          <CardTest></CardTest>
+          <v-text-field v-model="value" v-currency/>
+          <!-- <CardTest></CardTest> -->
 
         </v-card-text>
         <v-card-actions>
@@ -92,6 +92,11 @@ export default {
     Logo,
     VuetifyLogo,
     CardTest
+  },
+  data(){
+    return{
+      value: '1258'
+    }
   }
 }
 </script>
