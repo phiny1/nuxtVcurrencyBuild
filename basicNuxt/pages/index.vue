@@ -63,7 +63,21 @@
           >
             Nuxt GitHub
           </a>
-          <v-text-field v-model="value" v-currency/>
+          <VRow no-gutters>
+            <VCol cols="12" sm="9">
+              <VSlider
+                class="mt-5"
+                v-model="value"
+                label="Value"
+                max="30000"
+                hide-details
+              >
+              </VSlider>
+            </VCol>
+            <VCol cols="12" sm="3">
+              <v-text-field v-model="value" v-currency/>
+            </VCol>
+          </VRow>
           <!-- <CardTest></CardTest> -->
 
         </v-card-text>

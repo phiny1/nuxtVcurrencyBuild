@@ -53,8 +53,7 @@ export default {
   plugins: [
     '~/plugins/social.js',
     '~/plugins/Vuetify.js',
-    '~/plugins/currency.js',
-    { src: '~/plugins/vCurrencyField.js' }
+    '~/plugins/currency.js'
   ],
   /*
   ** Nuxt.js dev-modules
