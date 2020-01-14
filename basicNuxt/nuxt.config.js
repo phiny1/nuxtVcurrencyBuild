@@ -53,7 +53,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ["~/plugins/social.js", "~/plugins/vCurrencyField.js"],
+  plugins: ["~/plugins/social.js"],
   /*
    ** Nuxt.js dev-modules
    */
@@ -62,7 +62,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    ["v-currency-field/nuxt-treeshaking", { locale: "pt-BR", decimalLength: 2 }]
+    // ["v-currency-field/nuxt-treeshaking", { locale: "pt-BR", decimalLength: 2 }]
   ],
   /*
    ** vuetify module configuration
@@ -89,7 +89,7 @@ export default {
    ** Build configuration
    */
   build: {
-    transpile: ["@koumoul/vuetify-jsonschema-form/lib/index.vue"],
+    transpile: [/@koumoul/],
     /*
      ** You can extend webpack config here
      */

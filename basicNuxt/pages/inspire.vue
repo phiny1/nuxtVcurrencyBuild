@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import VJsonschemaForm from "@koumoul/vuetify-jsonschema-form";
+import VJsonschemaForm from "@koumoul/vuetify-jsonschema-form/lib/index.vue";
 
 export default {
   components: { VJsonschemaForm },
