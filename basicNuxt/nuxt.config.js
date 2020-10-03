@@ -53,16 +53,27 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ["~/plugins/social.js"],
+  plugins: [],
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ["@nuxtjs/vuetify"],
+  buildModules: [
+    ['@nuxtjs/vuetify', {treeShake: true}]
+  ],
   /*
    ** Nuxt.js modules
    */
   modules: [
-    // ["v-currency-field/nuxt-treeshaking", { locale: "pt-BR", decimalLength: 2 }]
+    ['v-currency-field/nuxt-treeshaking', {
+      locale: 'pt-BR',
+      decimalLength: 2,
+      autoDecimalMode: true,
+      min: null,
+      max: null,
+      defaultValue: 0,
+      valueAsInteger: false,
+      allowNegative: true
+    }],
   ],
   /*
    ** vuetify module configuration
